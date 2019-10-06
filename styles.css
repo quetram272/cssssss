@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777777;
+    padding: 30px;
+}
+header{
+   background-image: linear-gradient(to right bottom, rgba(142,158,252, 0.8), rgba(28, 62, 255, 0.8)), url('https://www.saga.vn/uploads/%E1%BA%A3nh%20b%C3%A0i%20vi%E1%BA%BFt%20790x399/meeting.png');
+    background-size: cover;
+    background-size: top;
+    position: relative;
+}
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.logo{
+    height: 70px;
+}
+.logo-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+}
+.heading-primary-main{
+    display: block;
+    font-size: 62px;
+    font-weight: 400;
+    letter-spacing: 15px;
+
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 18px;
+}
