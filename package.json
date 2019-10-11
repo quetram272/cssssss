@@ -1,0 +1,23 @@
+{
+  "name": "tram09876543",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss":"node-sass sass/main.scss css/styles.css -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quetram272/cssssss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quetram272/cssssss/issues"
+  },
+  "homepage": "https://github.com/quetram272/cssssss#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

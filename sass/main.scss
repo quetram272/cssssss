@@ -1,0 +1,149 @@
+
+@import './layout/grid';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-grey;
+    padding: 30px;
+}
+.header{
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8)), url('https://www.saga.vn/uploads/%E1%BA%A3nh%20b%C3%A0i%20vi%E1%BA%BFt%20790x399/meeting.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 95vh;
+    clip-path: ellipse(60% 60% at 49% 30%);
+
+&__text-box{
+    position: absolute;
+ text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+}
+
+.header__logo{
+    height: 70px;
+}
+.header__logo-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+
+}
+.heading-primary--main{
+    display: block;
+    font-size: 62px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    animation: moveInLeft 2s ease-out;
+}
+.heading-primary--sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 18px;
+    animation: moveInRight 2s ease-out;
+}
+.btn,
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 16px;
+    position: relative;
+}
+.btn--white{
+    color: $color-grey;
+    background-color: $color-white;
+}
+.btn:hover{
+    transform: translate(-3px);
+    box-shadow: 0 5px 30px rgba($color-black,0.2);
+}
+.btn:active{
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow:0 , 5px, 10px ,rgba($color-black, 0.2);
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+
+    z-index: -1;
+    transition: all 0.4s;
+}
+.btn--white::after{
+    background-color: $color-white;
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.btn--animated{
+    animation: moveInBottom 0.5s ease-out 0.75;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(0,-100px);
+    }
+    80%{
+        transform:translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(0,-100px);
+    }
+    80%{
+        transform:translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+   
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
